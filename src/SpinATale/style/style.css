@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    height:100%;
+}
+body {
+    background: #617e7e;
+    color: #333;
+    font-family: 'Arial',sans-serif;
+    font-size:16px;
+    min-height: 100%;
+}
+
+#header {
+    box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6) url("banner.jpg") no-repeat center top;
+}
+
+#header h1 {
+    padding-left: 30px;
+    padding-top: 30px;
+    letter-spacing: -1px;
+    color: #fff;
+    text-shadow: 0px 2px 0px #000;
+}
+#header h2 {
+    color:#ccc;
+    font-style: italic;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size:22px;
+    font-weight: normal;
+    font-family: "Georgia",serif;
+}
+#content {
+    background: #f4f4f4;
+    padding: 10px;
+    height: 100%;
+}
+
+#loginStrip{
+    background: #f4f4f4;
+    padding: 1em 0.5em;
+    text-align: right;
+}
+h2 {
+    font-size:28px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color:#000;    
+}
+#loginbox,#box {
+    width:500px;
+    margin: 1em auto;
+    padding: 2em;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    
+}
+#loginbox,#box h2 {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Georgia','serif';
+    font-style: italic;
+}
+#loginbox input{
+    display: block;
+    box-sizing: border-box;
+    width:100%;
+    padding: 0.33em;
+    font-size:20px;
+    border:1px solid #888;
+    margin-bottom: 1em;
+    color:#555;
+}
+
+#loginbox input:focus {
+    border:1px solid #09c;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3);
+    color:#333;
+}
+
+#loginbox button,#box button {
+    display: block;
+    box-sizing: border-box;
+    width:100%;
+    background: #09c;
+    border-radius: 3px;
+    border:1px solid #06a;
+    color:#fff;
+    text-align: center;
+    text-shadow: 0px 1px 0px #000;
+    font-size: 16px;
+    padding: 1em 0;
+    cursor: pointer;
+}
+#loginbox button:hover {
+    background: #06a;
+}
+#loginbox button:active {
+    position: relative;
+    top: 2px;
+    background: #333;
+}
+#box input,textarea{
+    display: block;
+    box-sizing: border-box;
+    width:100%;
+    padding: 0.33em;
+    font-size:20px;
+    border:1px solid #888;
+    margin-bottom: 1em;
+    color:#555;
+    font-size:14px;
+    
+}
+#box textarea {
+    font-family: 'Arial',sans-serif;
+    height:300px;
+}
+#footer{
+    background: #e1e1e1;
+    padding: 1em 0.5em;
+    text-align: center;
+}
+#nav {
+    height: 44px;
+    margin: 10px 0;
+    background: #f4f4f4;
+}
+#nav li {
+    list-style: none;
+    float: left;
+}
+#nav li a {
+    display: block;
+    font-size: 16px;
+    padding: 0px 9px;
+    text-decoration: none;
+    border-right: 1px solid #ddd;
+    color:#333;
+}
+#nav li a:hover {
+    background: #4da8b3;
+    color:#fff;
+}
+
+.text-center {
+    text-align: center;
+}
+#menu{
+    background: #9ac0c2;
+}
+#menu ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+#menu ul a{
+	display:block;
+	width:100px;
+}
+#menu li{
+	display:inline;
+	float:left;
+}
+.success {
+    background: #dfd;
+    padding: 1em;
+    color:#006c18;
+}
+
+.error {
+    background: #fdd;
+    padding: 1em;
+    color:#6c0000;
+}
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 1em;
+    transition: 300ms ease all;
+}
+.post:hover {
+    background: #fff;
+    box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.3);
+}
+.timestamp {
+    color:#888;
+}
+.post h2 a {
+    transition:600ms ease all;
+    text-decoration: none;
+    color:#053a16;
+}
+.post h2 a:hover {
+    color:#069927;
+}
+.post h2 {
+    font-size:28px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color:#000;    
+}
+.post .entry {
+    font-size:16px;
+    line-height: 1.4em;
+    margin-top: 1em;
+}
+.single_post {
+    background: #fff !important;
+}
+
+#comment_wrap {
+    padding: 1em;
+}
+
+.comment {
+    padding: 1em;
+    background: #c7d7e7;
+    margin-bottom: 1px;
+}
+.cmt_author {
+    font-weight: bold;
+    color:#1a5ca6;
+}
+
+.cmt_time {
+    font-size: 0.8em;
+    font-style: italic;
+    color:#777;
+}
+.cmt_text {
+    padding-top: 1em;
+}
+h2.cmt_count {
+    font-weight: normal;
+    margin-bottom: 0.67em;
+}
+#cmt_form {
+    margin-top: 2em;
+}
+#cmt_form input,#cmt_form textarea {
+    display: block;
+    padding: 0.3em;
+    font-size:14px;
+    border: 2px solid #999;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Arial",sans-serif;
+    margin-bottom: 1em;
+}
+#cmt_form input:focus,#cmt_form textarea:focus {
+    border-color: #0c3;
+}
+#cmt_form textarea {
+    height: 120px;
+}
+#cmt_form button {
+    display: inline-block;
+    float: right;
+    padding: 0.67em 1em;
+    font-weight: bold;
+    text-align: center;
+    background: #007700;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+}
+
+.clear {clear: both}
+a {
+    text-decoration: none;
+}
